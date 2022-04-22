@@ -3,7 +3,7 @@ This is a KOF 98FE bot in a very early stage of development based on the XV bot 
 
 ## Getting started
 To start using this bot in your server, add it with the following link https://discord.com/api/oauth2/authorize?client_id=966809752904564747&permissions=277025721344&scope=bot%20applications.commands. You can also view the bot in community bot listing platforms:
- - https://discord.bots.gg/bots/950847013870772264
+ - https://discord.bots.gg/bots/966809752904564747
  - https://top.gg/bot/950847013870772264
 
 ## Usage
