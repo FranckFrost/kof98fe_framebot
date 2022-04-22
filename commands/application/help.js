@@ -14,7 +14,7 @@ module.exports = {
             { name: 'Getting started', value: 'The bot provides a "move per command" response where you get to ask for information of a certain move of a certain character individually per request. The bot uses autocomplete, so please keep typing to filter the results to your needs. The bot has a **/frames** slash command which accept 2 arguments:', inline: false },
             { name: '\u200B', value: '\u200B' },
             { name: 'Character', value: 'The **character** which is a case insensitive string (e.g. athena, Chris, iori)', inline: false },
-            { name: 'Move', value: 'The **move** input which is a case insensitive string (e.g. crouchA, 236+C)', inline: false },
+            { name: 'Move', value: 'The **move** input which is a case insensitive string (e.g. crouch A, 236+C)', inline: false },
             { name: '\u200B', value: '\u200B' },
             { name: 'Demo', value: 'The following is a visual representation of how the bot works:', inline: false },
           )
