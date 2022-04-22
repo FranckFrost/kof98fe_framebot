@@ -15,16 +15,16 @@ module.exports = {
     .addStringOption(move =>
   		move.setName('move')
         .setAutocomplete(true)
-  			.setDescription('The move name and input.')
+  			.setDescription('The move input.')
   			.setRequired(true)),
   async execute(interaction) {
     const char = interaction.options.getString('character');
     const move = interaction.options.getString('move');
     // Load frame data json.
-    fs.readFile("./assets/framedata.json", "utf8", (err, jsonObject) => {
+    fs.readFile("./assets/framedata98.json", "utf8", (err, jsonObject) => {
       if (err) {
         // console.log("Error reading file from disk:", err);
-        return interaction.reply('Could not load frame data file. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1lzpQMoGAboJezLT9WRd3O-vlNDNRlgF_47ShtBGZ3G4) for the data.');
+        return interaction.reply('Could not load frame data file. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY) for the data.');
       }
       try {
         let data = JSON.parse(jsonObject);
@@ -43,29 +43,62 @@ module.exports = {
         if (character === 'O.Yashiro') {
           character = 'Orochi Yashiro'
             }
-        if (character === 'Ex kensou' ||
-            character === 'Ex Kensou') {
-          character = 'EX Kensou'
+        if (character === 'Ex kyo' ||
+            character === 'Ex Kyo') {
+          character = 'EX Kyo'
+            }
+        if (character === 'Ex geese' ||
+            character === 'Ex Geese') {
+          character = 'EX Geese'
+            }
+        if (character === 'Ex terry' ||
+            character === 'Ex Terry') {
+          character = 'EX Terry'
+            }
+        if (character === 'Ex andy' ||
+            character === 'Ex Andy') {
+          character = 'EX Andy'
+            }
+        if (character === 'Ex joe' ||
+            character === 'Ex Joe') {
+          character = 'EX Joe'
+            }
+        if (character === 'Ex ryo' ||
+            character === 'Ex Ryo') {
+          character = 'EX Ryo'
             }
         if (character === 'Ex robert' ||
             character === 'Ex Robert') {
           character = 'EX Robert'
             }
-        if (character === 'Ex takuma' ||
-            character === 'Ex Takuma') {
-          character = 'EX Takuma'
+        if (character === 'Ex yuri' ||
+            character === 'Ex Yuri') {
+          character = 'EX Yuri'
             }
-        if (character === 'K Dash' ||
-            character === 'K`') {
-          character = 'K'
+        if (character === 'Ex king' ||
+            character === 'Ex King') {
+          character = 'EX King'
             }
-        if (character === 'May Lee' ||
-            character === 'May Lee(Standard)') {
-          character = 'May Lee(Normal)'
+        if (character === 'Ex mai' ||
+            character === 'Ex Mai') {
+          character = 'EX Mai'
+            }
+        if (character === 'Ex yamazaki' ||
+            character === 'Ex Yamazaki') {
+          character = 'EX Yamazaki'
+            }
+        if (character === 'Ex blue mary' ||
+            character === 'Ex Blue mary' ||
+            character === 'Ex mary') {
+          character = 'EX Blue Mary'
+            }
+        if (character === 'Ex billy' ||
+            character === 'Ex Billy') {
+          character = 'EX Billy'
             }
         // If character not found, exit.
         if (data.hasOwnProperty(character) === false) {
-          return interaction.reply('Could not find character: ' + character + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1lzpQMoGAboJezLT9WRd3O-vlNDNRlgF_47ShtBGZ3G4) for available characters.');
+          return interaction.reply('Could not find character: ' + character + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY) for available characters.');
         }
         // Trim extra whitespaces from move.
         /* let parsedMove = move.trim();
@@ -101,48 +134,48 @@ module.exports = {
         escapedMoves = escapedMoves.trimEnd();*/
         // If move not found, exit.
         if (data[character].hasOwnProperty(escapedMoves) === false) {
-          return interaction.reply('Could not find specified move: ' + move + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1lzpQMoGAboJezLT9WRd3O-vlNDNRlgF_47ShtBGZ3G4) for available data.');
+          return interaction.reply('Could not find specified move: ' + move + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY) for available data.');
         }
         let moveData = data[character][escapedMoves];
-        const startup = (moveData['Startup (F)'] !== null) ? moveData['Startup (F)'].toString() : '-';
-        const active = (moveData['Active (F)'] !== null) ? moveData['Active (F)'].toString() : '-';
-        const recovery = (moveData['Recovery (F)'] !== null) ? moveData['Recovery (F)'].toString() : '-';
-        const oh = (moveData['On Hit (F)'] !== null) ? moveData['On Hit (F)'].toString() : '-';
-        const ob = (moveData['On Guard (F)'] !== null) ? moveData['On Guard (F)'].toString() : '-';
-        const notes = (moveData['Notes'] !== null) ? moveData['Notes'].toString() : 'No notes found.';
-        const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-';
+        const startup = (moveData['Startup'] !== null) ? moveData['Startup'].toString() : '-';
+        const active = (moveData['Active'] !== null) ? moveData['Active'].toString() : '-';
+        const recovery = (moveData['Recovery'] !== null) ? moveData['Recovery'].toString() : '-';
+        //const oh = (moveData['On Hit (F)'] !== null) ? moveData['On Hit (F)'].toString() : '-';
+        const ob = (moveData['Frame Advantage on Block'] !== null) ? moveData['Frame Advantage on Block'].toString() : '-';
+        const notes = (moveData['Properties'] !== null) ? moveData['Properties'].toString() : 'No notes found.';
+        //const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-';
         // Get lowercase trimmed character name for official site url.
         let lowerCaseChar = character.toLowerCase();
         lowerCaseChar = lowerCaseChar.split(/\s+/).join('');
         // Get character link and img for header and thumbnail.
         const link = this.getCharacterLink(character);
-        const img = this.getCharacterImg(character);
+        const img = character.toLowerCase().replace(' ', '').replace('.','');
         // console.log(charNo);
         const embed = new MessageEmbed()
           .setColor('#0x1a2c78')
           .setTitle(character)
-          .setURL('https://dreamcancel.com/wiki/index.php/The_King_of_Fighters_2002_UM/' + link)
-          .setAuthor({ name: escapedMoves, iconURL: 'https://pbs.twimg.com/profile_images/1150082025673625600/m1VyNZtc_400x400.png', url: 'https://docs.google.com/spreadsheets/d/1lzpQMoGAboJezLT9WRd3O-vlNDNRlgF_47ShtBGZ3G4' })
+          .setURL('https://dreamcancel.com/wiki/index.php/The_King_of_Fighters_98_UMFE/' + link)
+          .setAuthor({ name: escapedMoves, iconURL: 'https://pbs.twimg.com/profile_images/1150082025673625600/m1VyNZtc_400x400.png', url: 'https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY' })
           // .setDescription('Move input')
-          .setThumbnail('https://tiermaker.com/images/chart/chart/the-king-of-fighters-2002-um-characters-137019/64px-portraitkof2002um' + img + 'png.png')
+          .setThumbnail('https://tiermaker.com/images/chart/chart/king-of-fighters-98-ultimate-match-tier-list-maker-1280912/' + img + 'selectpng.png')
           .addFields(
             { name: 'Startup', value: startup, inline: true },
             { name: 'Active', value: active, inline: true },
             { name: 'Recovery', value: recovery, inline: true },
             { name: '\u200B', value: '\u200B' },
-            { name: 'Damage', value: dmg, inline: true },
-            { name: 'On hit', value: oh, inline: true },
+            // { name: 'Damage', value: dmg, inline: true },
+            // { name: 'On hit', value: oh, inline: true },
             { name: 'On block', value: ob, inline: true },
             { name: '\u200B', value: '\u200B' },
             { name: 'Notes', value: notes },
             // { name: 'Inline field title', value: 'Some value here', inline: true },
           )
-          .setFooter({ text: 'Got feedback? Join the 02UM server: https://discord.gg/8JNXHxf', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
-          (moveData['Image'] !== null) ? embed.setImage(moveData['Image']) : embed.addField('No image was found for this move', 'Feel free to share one with the [developers](https://github.com/FranckFrost/kof02um_framebot/issues) if you have one.', true);
+          .setFooter({ text: 'Got feedback? Join the 98FE server: https://discord.gg/rbRX3Dv5TG', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
+          (moveData['Image'] !== null) ? embed.setImage(moveData['Image']) : embed.addField('No image was found for this move', 'Feel free to share one with the [developers](https://github.com/FranckFrost/kof98fe_framebot/issues) if you have one.', true);
         return interaction.reply({embeds: [embed]});
       } catch (err) {
         console.log("Error parsing JSON string:", err);
-        return interaction.reply('There was an error while processing your request, if the problem persists, contact the bot developers. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/1lzpQMoGAboJezLT9WRd3O-vlNDNRlgF_47ShtBGZ3G4) to look for the data.');
+        return interaction.reply('There was an error while processing your request, if the problem persists, contact the bot developers. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY) to look for the data.');
       }
     });
   },
@@ -153,9 +186,19 @@ module.exports = {
       'Benimaru': 'Benimaru_Nikaido',
       'Billy': 'Billy_Kane',
       'Blue Mary': 'Blue_Mary',
-      'EX Kensou': 'EX_Kensou',
+      'EX Ryo': 'EX_Ryo',
       'EX Robert': 'EX_Robert',
-      'EX Takuma': 'EX_Takuma',
+      'EX Yuri': 'EX_Yuri',
+      'EX Terry': 'EX_Terry',
+      'EX Andy': 'EX_Andy',
+      'EX Joe': 'EX_Joe',
+      'EX Kyo': 'EX_Kyo',
+      'EX Geese': 'EX_Geese',
+      'EX King': 'EX_King',
+      'EX Mai': 'EX_Mai',
+      'EX Yamazaki': 'EX_Yamazaki',
+      'EX Billy': 'EX_Billy',
+      'EX Blue Mary': 'EX_Blue_Mary',
       'Orochi Chris': 'Orochi_Chris',
       'Orochi Shermie': 'Orochi_Shermie',
       'Orochi Yashiro': 'Orochi_Yashiro',
@@ -163,22 +206,24 @@ module.exports = {
       'Chin': 'Chin_Gentsai',
       'Choi': 'Choi_Bounge',
       'Clark': 'Clark_Still',
-      'Foxy': 'Foxy',
+      'Eiji': 'Eiji_Kisaragi',
       'Daimon': 'Goro_Daimon',
-      'Hinako': 'Hinako_Shijou',
+      'Krauser': 'Wolfgang_Krauser',
       'Iori': 'Iori_Yagami',
-      'Jhun': 'Jhun_Hoon',
+      'Brian': 'Brian_Battler',
       'Joe': 'Joe_Higashi',
-      'K': 'K%27',
+      'Heavy D': 'Heavy_D!',
+      'Mr. Big': 'Mr._Big',
+      'Rugal': 'Rugal_Bernstein',
       'Kasumi': 'Kasumi_Todoh',
       'Kim': 'Kim_Kaphwan',
-      'Kula': 'Kula_Diamond',
+      'Saisyu': 'Saisyu_Kusanagi',
       'Kyo': 'Kyo_Kusanagi',
       'Leona': 'Leona_Heidern',
-      'Xiangfei': 'Li_Xiangfei',
+      'Chizuru': 'Chizuru_Kagura',
       'Mai': 'Mai_Shiranui',
-      'May Lee(Normal)': 'May_Lee',
-      'May Lee(Hero)': 'May_Lee',
+      'Geese': 'Geese_Howard',
+      'Lucky': 'Lucky_Glauber',
       'Ralf': 'Ralf_Jones',
       'Robert': 'Robert_Garcia',
       'Ryo': 'Ryo_Sakazaki',
@@ -195,18 +240,27 @@ module.exports = {
     }
     return charLink[character];
   },
+  // img below not used because found better tiermaker
   getCharacterImg: function(character) {
     const charImg = {
-      'EX Kensou': 'kensouex',
-      'EX Robert': 'robertex',
-      'EX Takuma': 'takumaex',
-      'Kyo-1': 'kyo1',
-      'Kyo-2': 'kyo2',
-      'May Lee(Normal)': 'maylee',
-      'May Lee(Hero)': 'maylee',
+      'EX Billy': 'umbillyrbjpg',
+      'EX Blue Mary': 'umbluemaryrbjpg',
+      'EX Andy': 'umexandypng',
+      'EX Geese': 'umgeeserbjpg',
+      'EX Joe': 'umjoerbpng',
+      'EX King': 'umkingaof2jpg',
+      'EX Kyo': 'umkyo95jpg',
+      'EX Mai': 'ummairbjpg',
+      'EX Terry': 'umterryrb2png',
+      'EX Ryo': 'umryo94png',
+      'EX Robert': 'umrobert94png',
+      'EX Yuri': 'umyuri94png',
+      'EX Yamazaki': 'umyamazakirbjpg',
+      'Eiji': 'umeijipng',
+      'Kasumi': 'umkasumipng',
     };
     if (charImg[character] === undefined) {
-      return character.toLowerCase().replace(' ', '');
+      return character.toLowerCase().replace(' ', '')+'png';
     }
     return charImg[character];
   }
