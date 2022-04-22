@@ -15,7 +15,7 @@ The bot has a `/frames` slash command which accept 2 arguments:
 Hitbox images will be added slowly, starting with normal moves.
 
 ## Demo
-[![gif](https://media.giphy.com/media/LrqUuAZB2E3hGvHtOH/giphy.gif)](https://giphy.com/gifs/LrqUuAZB2E3hGvHtOH)
+[![gif](https://media.giphy.com/media/9jkdG3K7RAV0Ri9npP/giphy.gif)](https://giphy.com/gifs/9jkdG3K7RAV0Ri9npP)
 
 ## Feedback
 Visit the official [98FE Discord Server](https://discord.gg/rbRX3Dv5TG) to discuss with [@Franck_Frost](https://twitter.com/FranckFrost), maker of the bot.
