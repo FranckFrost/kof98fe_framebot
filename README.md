@@ -9,7 +9,7 @@ To start using this bot in your server, add it with the following link https://d
 ## Usage
 The bot has a `/frames` slash command which accept 2 arguments:
 - the `character` which is a case insensitive string (e.g. Kyo, Iori)
-- the `move` which is a case insensitive string of the motion or name (e.g. Crouch C, 236 C)
+- the `move` which is a case insensitive string of the motion or name (e.g. Crouch C, 236++C)
 
 ## Notes
 Hitbox images will be added slowly, starting with normal moves.
