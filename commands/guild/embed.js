@@ -88,7 +88,8 @@ module.exports = {
           character = 'EX Yamazaki'
             }
         if (character === 'Ex blue mary' ||
-            character === 'Ex Blue mary') {
+            character === 'Ex Blue mary' ||
+            character === 'Ex mary') {
           character = 'EX Blue Mary'
             }
         if (character === 'Ex billy' ||
@@ -150,6 +151,7 @@ module.exports = {
         const link = this.getCharacterLink(character);
         const img = character.toLowerCase().replace(' ', '').replace('.','');
         // console.log(charNo);
+        const embeds = [];
         const embed = new MessageEmbed()
           .setColor('#0x1a2c78')
           .setTitle(character)
@@ -169,9 +171,26 @@ module.exports = {
             { name: 'Notes', value: notes },
             // { name: 'Inline field title', value: 'Some value here', inline: true },
           )
-          .setFooter({ text: 'Got feedback? Join the 98FE server: https://discord.gg/rbRX3Dv5TG', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
+          .setFooter({ text: 'Got feedback? Join the 98FE server: discord.gg/rbRX3Dv5TG', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
           (moveData['Image'] !== null) ? embed.setImage(moveData['Image']) : embed.addField('No image was found for this move', 'Feel free to share one with the [developers](https://github.com/FranckFrost/kof98fe_framebot/issues) if you have one.', true);
-        return interaction.reply({embeds: [embed]});
+        embeds.push(embed);
+        if (moveData['Image1'] !== null) {
+          const embed1 = new MessageEmbed().setImage(moveData['Image1']);
+          embeds.push(embed1);
+          if (moveData['Image2'] !== null) {
+            const embed2 = new MessageEmbed().setImage(moveData['Image2']);
+            embeds.push(embed2);
+            if (moveData['Image3'] !== null) {
+              const embed3 = new MessageEmbed().setImage(moveData['Image3']);
+              embeds.push(embed3);
+              if (moveData['Image4'] !== null) {
+                const embed4 = new MessageEmbed().setImage(moveData['Image4']);
+                embeds.push(embed4);
+              }
+            }
+          }
+        } 
+        return interaction.reply({embeds: embeds});
       } catch (err) {
         console.log("Error parsing JSON string:", err);
         return interaction.reply('There was an error while processing your request, if the problem persists, contact the bot developers. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY) to look for the data.');
