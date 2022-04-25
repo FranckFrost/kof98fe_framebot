@@ -19,7 +19,7 @@ module.exports = {
             { name: 'Demo', value: 'The following is a visual representation of how the bot works:', inline: false },
           )
           .setImage('https://media.giphy.com/media/9jkdG3K7RAV0Ri9npP/giphy.gif')
-          .setFooter({ text: 'Got feedback? Join the 98FE server: https://discord.gg/rbRX3Dv5TG', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
+          .setFooter({ text: 'Got feedback? Join the 98FE server: discord.gg/rbRX3Dv5TG', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
         return interaction.reply({embeds: [embed]});
   },
 };
