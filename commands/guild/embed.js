@@ -134,7 +134,7 @@ module.exports = {
         escapedMoves = escapedMoves.trimEnd();*/
         // If move not found, exit.
         if (data[character].hasOwnProperty(escapedMoves) === false) {
-          return interaction.reply('Could not find specified move: ' + move + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY) for available data.');
+          return interaction.reply('Could not find specified move: ' + move + 'for ' + character + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY) for available data.');
         }
         let moveData = data[character][escapedMoves];
         const startup = (moveData['Startup'] !== null) ? moveData['Startup'].toString() : '-';
@@ -172,18 +172,18 @@ module.exports = {
             // { name: 'Inline field title', value: 'Some value here', inline: true },
           )
           .setFooter({ text: 'Got feedback? Join the 98FE server: discord.gg/rbRX3Dv5TG', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
-          (moveData['Image'] !== null) ? embed.setImage(moveData['Image']) : embed.addField('No image was found for this move', 'Feel free to share one with the [developers](https://github.com/FranckFrost/kof98fe_framebot/issues) if you have one.', true);
+          (moveData['Image'] != null) ? embed.setImage(moveData['Image']) : embed.addField('No image was found for this move', 'Feel free to share with the [developers](https://github.com/FranckFrost/kof98fe_framebot/issues) if you have one.', true);
         embeds.push(embed);
-        if (moveData['Image1'] !== null) {
+        if (moveData['Image1'] != null) {
           const embed1 = new MessageEmbed().setImage(moveData['Image1']);
           embeds.push(embed1);
-          if (moveData['Image2'] !== null) {
+          if (moveData['Image2'] != null) {
             const embed2 = new MessageEmbed().setImage(moveData['Image2']);
             embeds.push(embed2);
-            if (moveData['Image3'] !== null) {
+            if (moveData['Image3'] != null) {
               const embed3 = new MessageEmbed().setImage(moveData['Image3']);
               embeds.push(embed3);
-              if (moveData['Image4'] !== null) {
+              if (moveData['Image4'] != null) {
                 const embed4 = new MessageEmbed().setImage(moveData['Image4']);
                 embeds.push(embed4);
               }
