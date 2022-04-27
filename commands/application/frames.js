@@ -177,19 +177,19 @@ module.exports = {
         if (moveData['Image1'] != null) {
           const embed1 = new MessageEmbed().setImage(moveData['Image1']);
           embeds.push(embed1);
-          if (moveData['Image2'] != null) {
-            const embed2 = new MessageEmbed().setImage(moveData['Image2']);
-            embeds.push(embed2);
-            if (moveData['Image3'] != null) {
-              const embed3 = new MessageEmbed().setImage(moveData['Image3']);
-              embeds.push(embed3);
-              if (moveData['Image4'] != null) {
-                const embed4 = new MessageEmbed().setImage(moveData['Image4']);
-                embeds.push(embed4);
-              }
-            }
-          }
-        } 
+        }
+        if (moveData['Image2'] != null) {
+          const embed2 = new MessageEmbed().setImage(moveData['Image2']);
+          embeds.push(embed2);
+        }
+        if (moveData['Image3'] != null) {
+          const embed3 = new MessageEmbed().setImage(moveData['Image3']);
+          embeds.push(embed3);
+        }
+        if (moveData['Image4'] != null) {
+          const embed4 = new MessageEmbed().setImage(moveData['Image4']);
+          embeds.push(embed4);
+        }
         return interaction.reply({embeds: embeds});
       } catch (err) {
         console.log("Error parsing JSON string:", err);
@@ -259,7 +259,7 @@ module.exports = {
     return charLink[character];
   },
   // img below not used because found better tiermaker
-  getCharacterImg: function(character) {
+  /*getCharacterImg: function(character) {
     const charImg = {
       'EX Billy': 'umbillyrbjpg',
       'EX Blue Mary': 'umbluemaryrbjpg',
@@ -281,5 +281,5 @@ module.exports = {
       return character.toLowerCase().replace(' ', '')+'png';
     }
     return charImg[character];
-  }
+  }*/
 };
