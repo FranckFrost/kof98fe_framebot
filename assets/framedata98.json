@@ -7284,9 +7284,7 @@
       "Properties": null
     },
     "dp+A/623+A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/ZzJpLgT.png",
       "Image1": "https://imgur.com/XD4equk.png",
       "Image2": "https://imgur.com/9vztQMF.png",
       "Image3": null,
@@ -7297,9 +7295,7 @@
       "Properties": "1-3f upper autoguard"
     },
     "dp+C/623+C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/Mn471Lp.png",
       "Image1": "https://imgur.com/Dv5cjTB.png",
       "Image2": "https://imgur.com/wbhZCbf.png",
       "Image3": null,
