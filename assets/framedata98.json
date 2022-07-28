@@ -1109,9 +1109,7 @@
   },
   "Benimaru": {
     "Close A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/oWfVyob.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1122,9 +1120,7 @@
       "Properties": null
     },
     "Close B": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/omsIObR.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1135,9 +1131,7 @@
       "Properties": null
     },
     "Close C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/GgI3nIr.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1148,9 +1142,7 @@
       "Properties": null
     },
     "Close D": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/jx16DDK.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1161,9 +1153,7 @@
       "Properties": null
     },
     "Far A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/OGeYYKX.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1174,9 +1164,7 @@
       "Properties": null
     },
     "Far B": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/LDn8uTr.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1187,9 +1175,7 @@
       "Properties": null
     },
     "Far C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/BwX1FW8.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1200,9 +1186,7 @@
       "Properties": null
     },
     "Far D": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/6HIoV7l.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1213,9 +1197,7 @@
       "Properties": null
     },
     "Far C+D": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/idnFEMX.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1226,9 +1208,7 @@
       "Properties": null
     },
     "Crouch A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/At9IvA6.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1239,9 +1219,7 @@
       "Properties": null
     },
     "Crouch B": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/NGXmXi2.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1252,13 +1230,9 @@
       "Properties": null
     },
     "Crouch C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/fTEUMvU.png",
       "Image1": null,
-      "Image2": {
-        "valueType": "IMAGE"
-      },
+      "Image2": "https://imgur.com/VWcOZSy.png",
       "Image3": null,
       "Startup": 4,
       "Active": "3>3",
@@ -1267,9 +1241,7 @@
       "Properties": null
     },
     "Crouch D": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/gsnIb6h.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1280,9 +1252,7 @@
       "Properties": null
     },
     "Jump A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/4rNVa27.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1293,9 +1263,7 @@
       "Properties": null
     },
     "Jump B": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/JRHF63a.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1306,13 +1274,9 @@
       "Properties": null
     },
     "Jump C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/Tk9vFGl.png",
       "Image1": null,
-      "Image2": {
-        "valueType": "IMAGE"
-      },
+      "Image2": "https://imgur.com/CL7HXC8.png",
       "Image3": null,
       "Startup": 6,
       "Active": "3>7",
@@ -1321,7 +1285,7 @@
       "Properties": null
     },
     "Jump D": {
-      "Image": null,
+      "Image": "https://imgur.com/MMNSDxq.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1332,9 +1296,7 @@
       "Properties": null
     },
     "Jump C+D": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/bTisK9I.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1345,9 +1307,7 @@
       "Properties": null
     },
     "Neutral Jump D": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/vh5qFhQ.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1358,9 +1318,7 @@
       "Properties": null
     },
     "f+B/6+B": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/5STUCwS.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1371,9 +1329,7 @@
       "Properties": null
     },
     "air d+d+d+D/2+D": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/grhf9uR.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1384,9 +1340,7 @@
       "Properties": null
     },
     "qcf+A/236+A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/fIqgrVY.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1397,9 +1351,7 @@
       "Properties": null
     },
     "qcf+C/236+C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/sva9A94.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1410,7 +1362,7 @@
       "Properties": null
     },
     "air qcf+A/236+A": {
-      "Image": null,
+      "Image": "https://imgur.com/7t6zt3U.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1421,7 +1373,7 @@
       "Properties": null
     },
     "air qcf+C/236+C": {
-      "Image": null,
+      "Image": "https://imgur.com/7t6zt3U.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1432,9 +1384,7 @@
       "Properties": null
     },
     "qcf+B/D/236+B/D": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/s7MrCww.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1445,7 +1395,7 @@
       "Properties": null
     },
     "qcb+A/214+A": {
-      "Image": null,
+      "Image": "https://imgur.com/riazwsa.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1456,7 +1406,7 @@
       "Properties": null
     },
     "qcb+C/214+C": {
-      "Image": null,
+      "Image": "https://imgur.com/riazwsa.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1467,16 +1417,10 @@
       "Properties": null
     },
     "dp+B/623+B": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": {
-        "valueType": "IMAGE"
-      },
-      "Image3": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/8TmukrX.png",
+      "Image1": "https://imgur.com/7Nwrjp4.png",
+      "Image2": "https://imgur.com/rizkaMW.png",
+      "Image3": "https://imgur.com/e3vL5CK.png",
       "Startup": 6,
       "Active": "3>3>3>3",
       "Recovery": 28,
@@ -1484,16 +1428,10 @@
       "Properties": "1-3f inv"
     },
     "dp+D/623+D": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": {
-        "valueType": "IMAGE"
-      },
-      "Image3": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/WlhicU8.png",
+      "Image1": "https://imgur.com/7Nwrjp4.png",
+      "Image2": "https://imgur.com/3xd04yo.png",
+      "Image3": "https://imgur.com/OmAEKA2.png",
       "Startup": 6,
       "Active": "6>3>3>3",
       "Recovery": 37,
@@ -1501,14 +1439,10 @@
       "Properties": "1-7f inv"
     },
     "hcb+B/63214+B": {
-      "Image": null,
-      "Image1": {
-        "valueType": "IMAGE"
-      },
-      "Image2": {
-        "valueType": "IMAGE"
-      },
-      "Image3": null,
+      "Image": "https://imgur.com/st6EYKL.png",
+      "Image1": "https://imgur.com/MMNSDxq.png",
+      "Image2": "https://imgur.com/GONMvWJ.png",
+      "Image3": "https://imgur.com/TFIstYE.png",
       "Startup": 17,
       "Active": "3>(15)>6>(13)>2>3>3>3",
       "Recovery": 25,
@@ -1516,14 +1450,10 @@
       "Properties": null
     },
     "hcb+D/63214+D": {
-      "Image": null,
-      "Image1": {
-        "valueType": "IMAGE"
-      },
-      "Image2": {
-        "valueType": "IMAGE"
-      },
-      "Image3": null,
+      "Image": "https://imgur.com/st6EYKL.png",
+      "Image1": "https://imgur.com/MMNSDxq.png",
+      "Image2": "https://imgur.com/GONMvWJ.png",
+      "Image3": "https://imgur.com/TFIstYE.png",
       "Startup": 17,
       "Active": "3>(15)>6>(13)>2>3>3>3",
       "Recovery": 37,
@@ -1531,9 +1461,7 @@
       "Properties": null
     },
     "hcb f+A/C/63214 6+A/C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/7OcZUCe.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1544,9 +1472,7 @@
       "Properties": null
     },
     "qcf qcf+A/236 236+A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/G8rbznu.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1557,9 +1483,7 @@
       "Properties": null
     },
     "qcf qcf+C/236 236+C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/992nJoD.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1570,9 +1494,7 @@
       "Properties": null
     },
     "hcb hcb+A/C/63214 63214+A/C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/7OcZUCe.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1583,7 +1505,7 @@
       "Properties": null
     },
     "qcb qcb+B/D/214 214+B/D": {
-      "Image": null,
+      "Image": "https://imgur.com/Z14hZEx.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1594,7 +1516,7 @@
       "Properties": null
     },
     "qcf qcf+A/C/236 236+A/C(SDM)": {
-      "Image": null,
+      "Image": "https://imgur.com/tKExmmM.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1605,9 +1527,7 @@
       "Properties": null
     },
     "hcb hcb+A/C/63214 63214+A/C (SDM)": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
+      "Image": "https://imgur.com/7OcZUCe.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
@@ -1618,7 +1538,7 @@
       "Properties": null
     },
     "qcb qcb+B/D/214 214+B/D (SDM)": {
-      "Image": null,
+      "Image": "https://imgur.com/C47fC3b.png",
       "Image1": null,
       "Image2": null,
       "Image3": null,
