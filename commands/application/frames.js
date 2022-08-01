@@ -172,24 +172,44 @@ module.exports = {
             // { name: 'Inline field title', value: 'Some value here', inline: true },
           )
           .setFooter({ text: 'Got feedback? Join the 98FE server: discord.gg/rbRX3Dv5TG', iconURL: 'https://cdn.iconscout.com/icon/free/png-128/discord-3-569463.png' });
-          (moveData['Image'] != null) ? embed.setImage(moveData['Image']) : embed.addField('No image was found for this move', 'Feel free to share with the [developers](https://github.com/FranckFrost/kof98fe_framebot/issues) if you have one.', true);
+          (moveData['Image'] != null && moveData['Image'].toString() != {'valueType': 'IMAGE'}) ? embed.setImage(moveData['Image']) : embed.addField('No image was found for this move', 'Feel free to share with the [developers](https://github.com/FranckFrost/kof98fe_framebot/issues) if you have one.', true);
         embeds.push(embed);
-        if (moveData['Image1'] != null) {
+        if (moveData['Image1'] != null && moveData['Image1'].toString() != {'valueType': 'IMAGE'}) {
           const embed1 = new MessageEmbed().setImage(moveData['Image1']);
           embeds.push(embed1);
         }
-        if (moveData['Image2'] != null) {
+        if (moveData['Image2'] != null && moveData['Image2'].toString() != {'valueType': 'IMAGE'}) {
           const embed2 = new MessageEmbed().setImage(moveData['Image2']);
           embeds.push(embed2);
         }
-        if (moveData['Image3'] != null) {
+        if (moveData['Image3'] != null && moveData['Image3'].toString() != {'valueType': 'IMAGE'}) {
           const embed3 = new MessageEmbed().setImage(moveData['Image3']);
           embeds.push(embed3);
         }
-        if (moveData['Image4'] != null) {
+        if (moveData['Image4'] != null && moveData['Image4'].toString() != {'valueType': 'IMAGE'}) {
           const embed4 = new MessageEmbed().setImage(moveData['Image4']);
           embeds.push(embed4);
         }
+        if (moveData['Image5'] != null && moveData['Image5'].toString() != {'valueType': 'IMAGE'}) {
+          const embed5 = new MessageEmbed().setImage(moveData['Image5']);
+          embeds.push(embed5);
+        }
+        if (moveData['Image6'] != null && moveData['Image6'].toString() != {'valueType': 'IMAGE'}) {
+          const embed6 = new MessageEmbed().setImage(moveData['Image6']);
+          embeds.push(embed6);
+        }
+        if (moveData['Image7'] != null && moveData['Image7'].toString() != {'valueType': 'IMAGE'}) {
+          const embed7 = new MessageEmbed().setImage(moveData['Image7']);
+          embeds.push(embed7);
+        }
+        if (moveData['Image8'] != null && moveData['Image8'].toString() != {'valueType': 'IMAGE'}) {
+          const embed8 = new MessageEmbed().setImage(moveData['Image8']);
+          embeds.push(embed8);
+        }
+        if (moveData['Image9'] != null && moveData['Image9'].toString() != {'valueType': 'IMAGE'}) {
+          const embed9 = new MessageEmbed().setImage(moveData['Image9']);
+          embeds.push(embed9);
+        } //10 embeds max per message
         return interaction.reply({embeds: embeds});
       } catch (err) {
         console.log("Error parsing JSON string:", err);
