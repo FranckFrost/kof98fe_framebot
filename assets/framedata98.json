@@ -9372,17 +9372,13 @@
       "Properties": null
     },
     "dp+B/D/623+B/D": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": {
-        "valueType": "IMAGE"
-      },
+      "Image": null,
+      "Image1": null,
       "Startup": 14,
       "Active": "2",
       "Recovery": 20,
       "Frame Advantage on Block": -4,
-      "Properties": null
+      "Properties": "Negative on block but very positive on hit. You can link a normal that reaches on hit."
     },
     "qcb+A/214+A": {
       "Image": {
@@ -18640,9 +18636,9 @@
       "Image2": null,
       "Image3": null,
       "Startup": 3,
-      "Active": 3,
+      "Active": "*2",
       "Recovery": 8,
-      "Frame Advantage on Block": -1,
+      "Frame Advantage on Block": "*0",
       "Properties": null
     },
     "Crouch B": {
@@ -18835,7 +18831,7 @@
       "Startup": 5,
       "Active": "4>3>3>2",
       "Recovery": 21,
-      "Frame Advantage on Block": "-5 after closely blocking the last hit",
+      "Frame Advantage on Block": -5,
       "Properties": null
     },
     "qcb+D/214+D": {
@@ -18854,7 +18850,7 @@
       "Startup": 9,
       "Active": "8>7>3>2",
       "Recovery": 18,
-      "Frame Advantage on Block": "--2 after closely blocking the last hit",
+      "Frame Advantage on Block": "*+1 ~ +2",
       "Properties": null
     },
     "dp+A/623+A": {
@@ -26948,9 +26944,9 @@
       "Image2": null,
       "Image3": null,
       "Startup": 3,
-      "Active": 3,
+      "Active": "*2",
       "Recovery": 8,
-      "Frame Advantage on Block": -1,
+      "Frame Advantage on Block": "*0",
       "Properties": null
     },
     "Crouch B": {
@@ -27136,7 +27132,7 @@
       "Startup": 5,
       "Active": "4>3>3>2",
       "Recovery": 21,
-      "Frame Advantage on Block": "-5 after closely blocking the last hit",
+      "Frame Advantage on Block": -5,
       "Properties": null
     },
     "qcb+D/214+D": {
@@ -27153,7 +27149,7 @@
       "Startup": 9,
       "Active": "8>7>3>2",
       "Recovery": 18,
-      "Frame Advantage on Block": "-2 after closely blocking the last hit",
+      "Frame Advantage on Block": "*+1 ~ +2",
       "Properties": null
     },
     "[d]u+A/[2]8+A": {
