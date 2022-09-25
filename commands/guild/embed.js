@@ -155,7 +155,7 @@ module.exports = {
         const embed = new MessageEmbed()
           .setColor('#0x1a2c78')
           .setTitle(character)
-          .setURL('https://dreamcancel.com/wiki/index.php/The_King_of_Fighters_%2798_UMFE/' + link)
+          .setURL('https://dreamcancel.com/wiki/The_King_of_Fighters_%2798_UMFE/' + link)
           .setAuthor({ name: escapedMoves, iconURL: 'https://pbs.twimg.com/profile_images/1150082025673625600/m1VyNZtc_400x400.png', url: 'https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY' })
           // .setDescription('Move input')
           .setThumbnail('https://tiermaker.com/images/chart/chart/king-of-fighters-98-ultimate-match-tier-list-maker-1280912/' + img + 'selectpng.png')
