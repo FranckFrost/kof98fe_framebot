@@ -1898,8 +1898,8 @@
       "Startup": 6,
       "Active": "-/-",
       "Recovery": "-/-",
-      "Frame Advantage on Block": "-/-",
-      "Properties": null
+      "Frame Advantage on Block": 1,
+      "Properties": "Positive on block if cancelled to not whiff"
     },
     "Mash C": {
       "Image": null,
@@ -1909,8 +1909,8 @@
       "Startup": 6,
       "Active": "-/-",
       "Recovery": "-/-",
-      "Frame Advantage on Block": "-/-",
-      "Properties": null
+      "Frame Advantage on Block": 0,
+      "Properties": "Neutral on block if cancelled to not whiff"
     },
     "dp+B/623+B (rising)": {
       "Image": {
@@ -12968,7 +12968,7 @@
       "Active": "2>(10)>3>(5)>4>(21)>3",
       "Recovery": 26,
       "Frame Advantage on Block": "-11 = last hit",
-      "Properties": "1-6f inv"
+      "Properties": "*1-6f inv"
     },
     "qcf+B/236+B": {
       "Image": {
