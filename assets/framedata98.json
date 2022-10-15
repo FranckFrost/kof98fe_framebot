@@ -3572,6 +3572,30 @@
       "Frame Advantage on Block": "-/-",
       "Properties": null
     },
+    "qcf/236+A": {
+      "Image": null,
+      "Image1": null,
+      "Image2": null,
+      "Image3": null,
+      "Image4": null,
+      "Startup": null,
+      "Active": null,
+      "Recovery": null,
+      "Frame Advantage on Block": 1,
+      "Properties": null
+    },
+    "qcf/236+C": {
+      "Image": null,
+      "Image1": null,
+      "Image2": null,
+      "Image3": null,
+      "Image4": null,
+      "Startup": null,
+      "Active": null,
+      "Recovery": null,
+      "Frame Advantage on Block": -1,
+      "Properties": null
+    },
     "dp+A/623+A": {
       "Image": {
         "valueType": "IMAGE"
@@ -12367,7 +12391,7 @@
       "Startup": "20 (point blank)",
       "Active": "2>6",
       "Recovery": "24 (run), 21 (hit)",
-      "Frame Advantage on Block": -9,
+      "Frame Advantage on Block": "*0",
       "Properties": null
     },
     "[b]f+D/[4]6+D": {
