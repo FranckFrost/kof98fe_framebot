@@ -8568,7 +8568,7 @@
       "Startup": 13,
       "Active": "3>3>3>3",
       "Recovery": 16,
-      "Frame Advantage on Block": -10,
+      "Frame Advantage on Block": -1,
       "Properties": null
     },
     "qcb+D/214+D": {
@@ -8587,7 +8587,7 @@
       "Startup": 18,
       "Active": "3>3>3>3",
       "Recovery": 17,
-      "Frame Advantage on Block": -11,
+      "Frame Advantage on Block": -2,
       "Properties": null
     },
     "qcf qcf+A/C": {
