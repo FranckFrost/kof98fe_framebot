@@ -8939,7 +8939,7 @@
       "Startup": 5,
       "Active": "1>2>8",
       "Recovery": 26,
-      "Frame Advantage on Block": -19,
+      "Frame Advantage on Block": "-16 (point blank) /\n-18 (close)",
       "Properties": "1-5f inv"
     },
     "dp+C/623+C": {
@@ -8955,7 +8955,7 @@
       "Startup": 5,
       "Active": "2>3>13",
       "Recovery": 41,
-      "Frame Advantage on Block": -41,
+      "Frame Advantage on Block": "-36 (point blank) /\n-39 (close)",
       "Properties": "1-10f inv"
     },
     "qcb+A/214+A": {
@@ -19890,436 +19890,6 @@
       "Properties": null
     }
   },
-  "Yashiro": {
-    "Close A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 3,
-      "Active": 4,
-      "Recovery": 4,
-      "Frame Advantage on Block": 2,
-      "Properties": null
-    },
-    "Close B": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 3,
-      "Active": 5,
-      "Recovery": 9,
-      "Frame Advantage on Block": -2,
-      "Properties": null
-    },
-    "Close C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": {
-        "valueType": "IMAGE"
-      },
-      "Image2": null,
-      "Startup": 3,
-      "Active": "4>4",
-      "Recovery": 15,
-      "Frame Advantage on Block": -5,
-      "Properties": null
-    },
-    "Close D": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 3,
-      "Active": 5,
-      "Recovery": 21,
-      "Frame Advantage on Block": -8,
-      "Properties": null
-    },
-    "Far A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 3,
-      "Active": 4,
-      "Recovery": 7,
-      "Frame Advantage on Block": -1,
-      "Properties": null
-    },
-    "Far B": {
-      "Image": null,
-      "Image1": null,
-      "Image2": null,
-      "Startup": 4,
-      "Active": 8,
-      "Recovery": 13,
-      "Frame Advantage on Block": -11,
-      "Properties": null
-    },
-    "Far C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 10,
-      "Active": 3,
-      "Recovery": 27,
-      "Frame Advantage on Block": -12,
-      "Properties": null
-    },
-    "Far D": {
-      "Image": null,
-      "Image1": null,
-      "Image2": null,
-      "Startup": 8,
-      "Active": 4,
-      "Recovery": 33,
-      "Frame Advantage on Block": -19,
-      "Properties": null
-    },
-    "Far C+D": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 15,
-      "Active": 5,
-      "Recovery": 24,
-      "Frame Advantage on Block": -7,
-      "Properties": null
-    },
-    "Crouch A": {
-      "Image": null,
-      "Image1": null,
-      "Image2": null,
-      "Startup": 3,
-      "Active": 4,
-      "Recovery": 6,
-      "Frame Advantage on Block": 0,
-      "Properties": null
-    },
-    "Crouch B": {
-      "Image": null,
-      "Image1": null,
-      "Image2": null,
-      "Startup": 6,
-      "Active": 3,
-      "Recovery": 10,
-      "Frame Advantage on Block": -3,
-      "Properties": null
-    },
-    "Crouch C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": {
-        "valueType": "IMAGE"
-      },
-      "Image2": null,
-      "Startup": 3,
-      "Active": "2>3",
-      "Recovery": 28,
-      "Frame Advantage on Block": -15,
-      "Properties": null
-    },
-    "Crouch D": {
-      "Image": null,
-      "Image1": {
-        "valueType": "IMAGE"
-      },
-      "Image2": null,
-      "Startup": 9,
-      "Active": "3>(5)>5",
-      "Recovery": 22,
-      "Frame Advantage on Block": -12,
-      "Properties": null
-    },
-    "Jump A": {
-      "Image": null,
-      "Image1": null,
-      "Image2": null,
-      "Startup": 6,
-      "Active": 9,
-      "Recovery": "-/-",
-      "Frame Advantage on Block": "-/-",
-      "Properties": null
-    },
-    "Jump B": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 7,
-      "Active": 9,
-      "Recovery": "-/-",
-      "Frame Advantage on Block": "-/-",
-      "Properties": null
-    },
-    "Jump C": {
-      "Image": null,
-      "Image1": null,
-      "Image2": null,
-      "Startup": 8,
-      "Active": 5,
-      "Recovery": "-/-",
-      "Frame Advantage on Block": "-/-",
-      "Properties": null
-    },
-    "Jump D": {
-      "Image": null,
-      "Image1": null,
-      "Image2": null,
-      "Startup": 7,
-      "Active": 5,
-      "Recovery": "-/-",
-      "Frame Advantage on Block": "-/-",
-      "Properties": null
-    },
-    "Jump C+D": {
-      "Image": null,
-      "Image1": null,
-      "Image2": null,
-      "Startup": 11,
-      "Active": 4,
-      "Recovery": "-/-",
-      "Frame Advantage on Block": "-/-",
-      "Properties": null
-    },
-    "f+A/6+A": {
-      "Image": null,
-      "Image1": null,
-      "Image2": null,
-      "Startup": 18,
-      "Active": 3,
-      "Recovery": 24,
-      "Frame Advantage on Block": -9,
-      "Properties": null
-    },
-    "f+A/6+A (cancel)": {
-      "Image": null,
-      "Image1": null,
-      "Image2": null,
-      "Startup": 12,
-      "Active": 3,
-      "Recovery": 24,
-      "Frame Advantage on Block": -9,
-      "Properties": null
-    },
-    "f+B/6+B": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 11,
-      "Active": 5,
-      "Recovery": 28,
-      "Frame Advantage on Block": -15,
-      "Properties": null
-    },
-    "hcb+A/63214+A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": {
-        "valueType": "IMAGE"
-      },
-      "Image2": {
-        "valueType": "IMAGE"
-      },
-      "Startup": 12,
-      "Active": "2>(10)>2>4",
-      "Recovery": 39,
-      "Frame Advantage on Block": "-25 after blocking the last hit",
-      "Properties": null
-    },
-    "hcb+C/63214+C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": {
-        "valueType": "IMAGE"
-      },
-      "Image2": {
-        "valueType": "IMAGE"
-      },
-      "Startup": 14,
-      "Active": "2>(12)>2>(14)>2>(10)>2>4",
-      "Recovery": 29,
-      "Frame Advantage on Block": "-15 after blocking the last hit",
-      "Properties": null
-    },
-    "dp+A/623+A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": {
-        "valueType": "IMAGE"
-      },
-      "Image2": null,
-      "Startup": 9,
-      "Active": "3",
-      "Recovery": 37,
-      "Frame Advantage on Block": -22,
-      "Properties": "1-5f guardpoint"
-    },
-    "dp+C/623+C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": {
-        "valueType": "IMAGE"
-      },
-      "Image2": null,
-      "Startup": 11,
-      "Active": "3",
-      "Recovery": 40,
-      "Frame Advantage on Block": -25,
-      "Properties": "1-5f guardpoint"
-    },
-    "qcb+B/214+B": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": {
-        "valueType": "IMAGE"
-      },
-      "Image2": null,
-      "Startup": 22,
-      "Active": "3>3",
-      "Recovery": 23,
-      "Frame Advantage on Block": -8,
-      "Properties": "1-9f inv"
-    },
-    "qcb+D/214+D": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": {
-        "valueType": "IMAGE"
-      },
-      "Image2": null,
-      "Startup": 27,
-      "Active": "3>3",
-      "Recovery": 27,
-      "Frame Advantage on Block": -12,
-      "Properties": "1-15f inv"
-    },
-    "hcf+A/41236+A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 16,
-      "Active": "8",
-      "Recovery": 13,
-      "Frame Advantage on Block": -3,
-      "Properties": null
-    },
-    "hcf+C/41236+C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 24,
-      "Active": "7",
-      "Recovery": 18,
-      "Frame Advantage on Block": -7,
-      "Properties": null
-    },
-    "hcf+A/C/41236+A/C > qcf+A/236+A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 6,
-      "Active": "5",
-      "Recovery": 18,
-      "Frame Advantage on Block": -5,
-      "Properties": null
-    },
-    "hcf+A/C/41236+A/C > qcf+C/236+C": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 6,
-      "Active": "4",
-      "Recovery": 37,
-      "Frame Advantage on Block": -23,
-      "Properties": null
-    },
-    "qcf qcf+A/236 236+A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 6,
-      "Active": "4",
-      "Recovery": 31,
-      "Frame Advantage on Block": -17,
-      "Properties": null
-    },
-    "qcb hcf+A/214 41236+A": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": {
-        "valueType": "IMAGE"
-      },
-      "Image2": {
-        "valueType": "IMAGE"
-      },
-      "Startup": 11,
-      "Active": "4>(6)>2>(12)>3>(7)>2>(10)>4",
-      "Recovery": 41,
-      "Frame Advantage on Block": "-27 after blocking the last hit",
-      "Properties": "1-4f inv"
-    },
-    "qcf qcf+A/C/236 236+A/C (SDM)": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": null,
-      "Image2": null,
-      "Startup": 6,
-      "Active": "4",
-      "Recovery": 34,
-      "Frame Advantage on Block": -20,
-      "Properties": "1-2f inv"
-    },
-    "hcb qcf/214 41236+A/C (SDM)": {
-      "Image": {
-        "valueType": "IMAGE"
-      },
-      "Image1": {
-        "valueType": "IMAGE"
-      },
-      "Image2": {
-        "valueType": "IMAGE"
-      },
-      "Startup": 8,
-      "Active": "4>(6)>2>(12)>3>(7)>2>(10)>4>(6)>2>17",
-      "Recovery": 30,
-      "Frame Advantage on Block": "-29 after blocking the last hit",
-      "Properties": "1-8f inv"
-    }
-  },
   "Yuri": {
     "Close A": {
       "Image": null,
@@ -20930,6 +20500,436 @@
       "Recovery": 35,
       "Frame Advantage on Block": -37,
       "Properties": null
+    }
+  },
+  "Yashiro": {
+    "Close A": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 3,
+      "Active": 4,
+      "Recovery": 4,
+      "Frame Advantage on Block": 2,
+      "Properties": null
+    },
+    "Close B": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 3,
+      "Active": 5,
+      "Recovery": 9,
+      "Frame Advantage on Block": -2,
+      "Properties": null
+    },
+    "Close C": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": {
+        "valueType": "IMAGE"
+      },
+      "Image2": null,
+      "Startup": 3,
+      "Active": "4>4",
+      "Recovery": 15,
+      "Frame Advantage on Block": -5,
+      "Properties": null
+    },
+    "Close D": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 3,
+      "Active": 5,
+      "Recovery": 21,
+      "Frame Advantage on Block": -8,
+      "Properties": null
+    },
+    "Far A": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 3,
+      "Active": 4,
+      "Recovery": 7,
+      "Frame Advantage on Block": -1,
+      "Properties": null
+    },
+    "Far B": {
+      "Image": null,
+      "Image1": null,
+      "Image2": null,
+      "Startup": 4,
+      "Active": 8,
+      "Recovery": 13,
+      "Frame Advantage on Block": -11,
+      "Properties": null
+    },
+    "Far C": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 10,
+      "Active": 3,
+      "Recovery": 27,
+      "Frame Advantage on Block": -12,
+      "Properties": null
+    },
+    "Far D": {
+      "Image": null,
+      "Image1": null,
+      "Image2": null,
+      "Startup": 8,
+      "Active": 4,
+      "Recovery": 33,
+      "Frame Advantage on Block": -19,
+      "Properties": null
+    },
+    "Far C+D": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 15,
+      "Active": 5,
+      "Recovery": 24,
+      "Frame Advantage on Block": -7,
+      "Properties": null
+    },
+    "Crouch A": {
+      "Image": null,
+      "Image1": null,
+      "Image2": null,
+      "Startup": 3,
+      "Active": 4,
+      "Recovery": 6,
+      "Frame Advantage on Block": 0,
+      "Properties": null
+    },
+    "Crouch B": {
+      "Image": null,
+      "Image1": null,
+      "Image2": null,
+      "Startup": 6,
+      "Active": 3,
+      "Recovery": 10,
+      "Frame Advantage on Block": -3,
+      "Properties": null
+    },
+    "Crouch C": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": {
+        "valueType": "IMAGE"
+      },
+      "Image2": null,
+      "Startup": 3,
+      "Active": "2>3",
+      "Recovery": 28,
+      "Frame Advantage on Block": -15,
+      "Properties": null
+    },
+    "Crouch D": {
+      "Image": null,
+      "Image1": {
+        "valueType": "IMAGE"
+      },
+      "Image2": null,
+      "Startup": 9,
+      "Active": "3>(5)>5",
+      "Recovery": 22,
+      "Frame Advantage on Block": -12,
+      "Properties": null
+    },
+    "Jump A": {
+      "Image": null,
+      "Image1": null,
+      "Image2": null,
+      "Startup": 6,
+      "Active": 9,
+      "Recovery": "-/-",
+      "Frame Advantage on Block": "-/-",
+      "Properties": null
+    },
+    "Jump B": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 7,
+      "Active": 9,
+      "Recovery": "-/-",
+      "Frame Advantage on Block": "-/-",
+      "Properties": null
+    },
+    "Jump C": {
+      "Image": null,
+      "Image1": null,
+      "Image2": null,
+      "Startup": 8,
+      "Active": 5,
+      "Recovery": "-/-",
+      "Frame Advantage on Block": "-/-",
+      "Properties": null
+    },
+    "Jump D": {
+      "Image": null,
+      "Image1": null,
+      "Image2": null,
+      "Startup": 7,
+      "Active": 5,
+      "Recovery": "-/-",
+      "Frame Advantage on Block": "-/-",
+      "Properties": null
+    },
+    "Jump C+D": {
+      "Image": null,
+      "Image1": null,
+      "Image2": null,
+      "Startup": 11,
+      "Active": 4,
+      "Recovery": "-/-",
+      "Frame Advantage on Block": "-/-",
+      "Properties": null
+    },
+    "f+A/6+A": {
+      "Image": null,
+      "Image1": null,
+      "Image2": null,
+      "Startup": 18,
+      "Active": 3,
+      "Recovery": 24,
+      "Frame Advantage on Block": -9,
+      "Properties": null
+    },
+    "f+A/6+A (cancel)": {
+      "Image": null,
+      "Image1": null,
+      "Image2": null,
+      "Startup": 12,
+      "Active": 3,
+      "Recovery": 24,
+      "Frame Advantage on Block": -9,
+      "Properties": null
+    },
+    "f+B/6+B": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 11,
+      "Active": 5,
+      "Recovery": 28,
+      "Frame Advantage on Block": -15,
+      "Properties": null
+    },
+    "hcb+A/63214+A": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": {
+        "valueType": "IMAGE"
+      },
+      "Image2": {
+        "valueType": "IMAGE"
+      },
+      "Startup": 12,
+      "Active": "2>(10)>2>4",
+      "Recovery": 39,
+      "Frame Advantage on Block": "-25 after blocking the last hit",
+      "Properties": null
+    },
+    "hcb+C/63214+C": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": {
+        "valueType": "IMAGE"
+      },
+      "Image2": {
+        "valueType": "IMAGE"
+      },
+      "Startup": 14,
+      "Active": "2>(12)>2>(14)>2>(10)>2>4",
+      "Recovery": 29,
+      "Frame Advantage on Block": "-15 after blocking the last hit",
+      "Properties": null
+    },
+    "dp+A/623+A": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": {
+        "valueType": "IMAGE"
+      },
+      "Image2": null,
+      "Startup": 9,
+      "Active": "3",
+      "Recovery": 37,
+      "Frame Advantage on Block": -22,
+      "Properties": "1-5f guardpoint"
+    },
+    "dp+C/623+C": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": {
+        "valueType": "IMAGE"
+      },
+      "Image2": null,
+      "Startup": 11,
+      "Active": "3",
+      "Recovery": 40,
+      "Frame Advantage on Block": -25,
+      "Properties": "1-5f guardpoint"
+    },
+    "qcb+B/214+B": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": {
+        "valueType": "IMAGE"
+      },
+      "Image2": null,
+      "Startup": 22,
+      "Active": "3>3",
+      "Recovery": 23,
+      "Frame Advantage on Block": -8,
+      "Properties": "1-9f inv"
+    },
+    "qcb+D/214+D": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": {
+        "valueType": "IMAGE"
+      },
+      "Image2": null,
+      "Startup": 27,
+      "Active": "3>3",
+      "Recovery": 27,
+      "Frame Advantage on Block": -12,
+      "Properties": "1-15f inv"
+    },
+    "hcf+A/41236+A": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 16,
+      "Active": "8",
+      "Recovery": 13,
+      "Frame Advantage on Block": -3,
+      "Properties": null
+    },
+    "hcf+C/41236+C": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 24,
+      "Active": "7",
+      "Recovery": 18,
+      "Frame Advantage on Block": -7,
+      "Properties": null
+    },
+    "hcf+A/C/41236+A/C > qcf+A/236+A": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 6,
+      "Active": "5",
+      "Recovery": 18,
+      "Frame Advantage on Block": -5,
+      "Properties": null
+    },
+    "hcf+A/C/41236+A/C > qcf+C/236+C": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 6,
+      "Active": "4",
+      "Recovery": 37,
+      "Frame Advantage on Block": -23,
+      "Properties": null
+    },
+    "qcf qcf+A/236 236+A": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 6,
+      "Active": "4",
+      "Recovery": 31,
+      "Frame Advantage on Block": -17,
+      "Properties": null
+    },
+    "qcb hcf+A/214 41236+A": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": {
+        "valueType": "IMAGE"
+      },
+      "Image2": {
+        "valueType": "IMAGE"
+      },
+      "Startup": 11,
+      "Active": "4>(6)>2>(12)>3>(7)>2>(10)>4",
+      "Recovery": 41,
+      "Frame Advantage on Block": "-27 after blocking the last hit",
+      "Properties": "1-4f inv"
+    },
+    "qcf qcf+A/C/236 236+A/C (SDM)": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": null,
+      "Image2": null,
+      "Startup": 6,
+      "Active": "4",
+      "Recovery": 34,
+      "Frame Advantage on Block": -20,
+      "Properties": "1-2f inv"
+    },
+    "hcb qcf/214 41236+A/C (SDM)": {
+      "Image": {
+        "valueType": "IMAGE"
+      },
+      "Image1": {
+        "valueType": "IMAGE"
+      },
+      "Image2": {
+        "valueType": "IMAGE"
+      },
+      "Startup": 8,
+      "Active": "4>(6)>2>(12)>3>(7)>2>(10)>4>(6)>2>17",
+      "Recovery": 30,
+      "Frame Advantage on Block": "-29 after blocking the last hit",
+      "Properties": "1-8f inv"
     }
   },
   "Orochi Chris": {
@@ -24746,7 +24746,7 @@
       "Startup": 5,
       "Active": "4>13",
       "Recovery": 27,
-      "Frame Advantage on Block": -26,
+      "Frame Advantage on Block": "-22 after closely blocking the 2nd hit",
       "Properties": "1-5f inv"
     },
     "dp+C/623+C": {
@@ -24757,7 +24757,7 @@
       "Startup": 5,
       "Active": "4>22",
       "Recovery": 27,
-      "Frame Advantage on Block": null,
+      "Frame Advantage on Block": "-31 after closely blocking the 2nd hit",
       "Properties": "1-9f inv"
     },
     "rdp+B/421+B": {
