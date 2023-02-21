@@ -12362,7 +12362,7 @@
       "Active": "2>2>2",
       "Recovery": 41,
       "Frame Advantage on Block": "-25 after blocking the last hit",
-      "Properties": null
+      "Properties": "1-4f inv"
     },
     "[d]u+C/[2]8+C": {
       "Image": {
@@ -12550,7 +12550,7 @@
       "Active": "3>(15)>4",
       "Recovery": 60,
       "Frame Advantage on Block": -46,
-      "Properties": "1-8f inv"
+      "Properties": "1-10f inv"
     },
     "qcf qcf+C/236 236+C": {
       "Image": {
@@ -12562,7 +12562,7 @@
       "Active": "3>(15)>4",
       "Recovery": 60,
       "Frame Advantage on Block": -46,
-      "Properties": "1-8f inv"
+      "Properties": "1-10f inv"
     },
     "air qcf hcb+A/C/236 63214+A/C (SDM)": {
       "Image": {
@@ -12598,7 +12598,7 @@
       "Active": "3>(15)>4",
       "Recovery": 60,
       "Frame Advantage on Block": -46,
-      "Properties": "1-8f inv"
+      "Properties": "1-11f inv"
     }
   },
   "Lucky": {
@@ -20524,7 +20524,7 @@
       "Startup": 3,
       "Active": 5,
       "Recovery": 9,
-      "Frame Advantage on Block": -2,
+      "Frame Advantage on Block": -4,
       "Properties": null
     },
     "Close C": {
@@ -20652,7 +20652,7 @@
       "Startup": 9,
       "Active": "3>(5)>5",
       "Recovery": 22,
-      "Frame Advantage on Block": -12,
+      "Frame Advantage on Block": "1st = -17 ; 2nd = -9",
       "Properties": null
     },
     "Jump A": {
@@ -21799,7 +21799,7 @@
       "Startup": 3,
       "Active": 5,
       "Recovery": 9,
-      "Frame Advantage on Block": -2,
+      "Frame Advantage on Block": -4,
       "Properties": null
     },
     "Close C": {
@@ -21935,7 +21935,7 @@
       "Startup": 9,
       "Active": "3>(5)>5",
       "Recovery": 22,
-      "Frame Advantage on Block": -12,
+      "Frame Advantage on Block": "1st = -17 ; 2nd = -9",
       "Properties": null
     },
     "Jump A": {
