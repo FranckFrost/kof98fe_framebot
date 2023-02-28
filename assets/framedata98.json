@@ -285,7 +285,7 @@
       "Startup": "7 (point blank)",
       "Active": "6",
       "Recovery": "19 (dash),15 (hit)",
-      "Frame Advantage on Block": -3,
+      "Frame Advantage on Block": -12,
       "Properties": null
     },
     "db f+C/1 6+C": {
@@ -297,7 +297,7 @@
       "Startup": "25 (point blank)",
       "Active": "6",
       "Recovery": "21 (dash), 12 (hit)",
-      "Frame Advantage on Block": 0,
+      "Frame Advantage on Block": -3,
       "Properties": null
     },
     "db f+A/C/1 6+A/C > qcf+A/C/236+A/C": {
@@ -18404,7 +18404,7 @@
       "Startup": 15,
       "Active": "18",
       "Recovery": 24,
-      "Frame Advantage on Block": -24,
+      "Frame Advantage on Block": -4,
       "Properties": null
     },
     "qcb+A/214+A": {
@@ -22461,7 +22461,7 @@
       "Startup": "7 (point blank)",
       "Active": "6",
       "Recovery": "19 (dash),15 (hit)",
-      "Frame Advantage on Block": -3,
+      "Frame Advantage on Block": -12,
       "Properties": null
     },
     "db f+C/1 6+C": {
@@ -22473,7 +22473,7 @@
       "Startup": "25 (point blank)",
       "Active": "6",
       "Recovery": "21 (dash), 12 (hit)",
-      "Frame Advantage on Block": 0,
+      "Frame Advantage on Block": -3,
       "Properties": null
     },
     "db f+A/C/1 6+A/C > qcf+A/C/236+A/C": {
