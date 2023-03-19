@@ -1906,7 +1906,7 @@
       "Image1": null,
       "Image2": null,
       "Image3": null,
-      "Startup": 6,
+      "Startup": 12,
       "Active": "-/-",
       "Recovery": "-/-",
       "Frame Advantage on Block": 0,
@@ -4319,7 +4319,7 @@
       "Startup": "Depends - Without inputting the command the second time - 8 (summoning the clone), 22 (the clone running)",
       "Active": "2>2",
       "Recovery": 14,
-      "Frame Advantage on Block": 0,
+      "Frame Advantage on Block": -2,
       "Properties": null
     },
     "hcb+C/63214+C": {
@@ -4365,7 +4365,7 @@
       "Startup": "Depends - Without inputting the command the second time - 8 (summoning the clone), 19 (the clone running)",
       "Active": "4",
       "Recovery": 14,
-      "Frame Advantage on Block": 0,
+      "Frame Advantage on Block": "Slightly negative (looks like -1)",
       "Properties": null
     },
     "hcb+D/63214+D": {
@@ -4435,7 +4435,7 @@
       "Startup": "8 (summoning the clone), 16 (the attack startup)",
       "Active": "4",
       "Recovery": 13,
-      "Frame Advantage on Block": 1,
+      "Frame Advantage on Block": "0 if it hits on the first frame",
       "Properties": null
     },
     "dd+B/22+B": {
@@ -6522,7 +6522,7 @@
     "dp+C/623+C": {
       "Image": null,
       "Image1": null,
-      "Startup": 18,
+      "Startup": 16,
       "Active": 39,
       "Recovery": 28,
       "Frame Advantage on Block": "-/-",
@@ -6942,7 +6942,7 @@
       "Image1": null,
       "Image2": null,
       "Image3": null,
-      "Startup": "-/-",
+      "Startup": "0",
       "Active": "18",
       "Recovery": 23,
       "Frame Advantage on Block": "-/-",
@@ -6955,7 +6955,7 @@
       "Image1": null,
       "Image2": null,
       "Image3": null,
-      "Startup": "-/-",
+      "Startup": "1",
       "Active": "18",
       "Recovery": 23,
       "Frame Advantage on Block": "-/-",
@@ -6997,7 +6997,7 @@
       "Startup": "20",
       "Active": "16",
       "Recovery": 17,
-      "Frame Advantage on Block": -15,
+      "Frame Advantage on Block": -5,
       "Properties": null
     },
     "dp+A/623+A": {
@@ -24044,7 +24044,7 @@
       },
       "Image1": null,
       "Image2": null,
-      "Startup": "-/-",
+      "Startup": "0",
       "Active": "18",
       "Recovery": 23,
       "Frame Advantage on Block": "-/-",
@@ -24056,7 +24056,7 @@
       },
       "Image1": null,
       "Image2": null,
-      "Startup": "-/-",
+      "Startup": "1",
       "Active": "18",
       "Recovery": 23,
       "Frame Advantage on Block": "-/-",
