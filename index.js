@@ -59,6 +59,7 @@ client.on('interactionCreate', async autocomplete => {
       // currentValue = autocomplete.options.getFocused()
       let moveObj = {}
       if (json[character] === undefined) {
+        // Capitilize first letter of character name.
         let char = character.charAt(0).toUpperCase() + character.slice(1);
         // Temp: validate extra names.
         if (char === 'Mary') {
