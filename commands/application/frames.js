@@ -150,10 +150,10 @@ module.exports = {
         // Get character link and img for header and thumbnail.
         const link = this.getCharacterLink(character);
         let img = character.toLowerCase().replace(' ', '').replace('.','');
-        if (character = 'Blue Mary') {
+        if (character === 'Blue Mary') {
           img = 'mary'
             }
-        if (character = 'EX Blue Mary') {
+        if (character === 'EX Blue Mary') {
           img = 'exmary'
             }
         // console.log(charNo);
