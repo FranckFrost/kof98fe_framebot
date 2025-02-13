@@ -144,16 +144,16 @@ module.exports = {
         const ob = (moveData['Frame Advantage on Block'] !== null) ? moveData['Frame Advantage on Block'].toString() : '-';
         const notes = (moveData['Properties'] !== null) ? moveData['Properties'].toString() : 'No notes found.';
         //const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-';
-        // Get lowercase trimmed character name for official site url.
-        let lowerCaseChar = character.toLowerCase();
-        lowerCaseChar = lowerCaseChar.split(/\s+/).join('');
+        // Get lowercase trimmed character name for official site url. (old)
+        // let lowerCaseChar = character.toLowerCase();
+        // lowerCaseChar = lowerCaseChar.split(/\s+/).join('');
         // Get character link and img for header and thumbnail.
         const link = this.getCharacterLink(character);
-        const img = character.toLowerCase().replace(' ', '').replace('.','');
-        if (img === 'bluemary') {
+        let img = character.toLowerCase().replace(' ', '').replace('.','');
+        if (character = 'Blue Mary') {
           img = 'mary'
             }
-        if (img === 'exbluemary') {
+        if (character = 'EX Blue Mary') {
           img = 'exmary'
             }
         // console.log(charNo);
