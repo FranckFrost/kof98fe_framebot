@@ -150,6 +150,12 @@ module.exports = {
         // Get character link and img for header and thumbnail.
         const link = this.getCharacterLink(character);
         const img = character.toLowerCase().replace(' ', '').replace('.','');
+        if (img === 'bluemary') {
+          img = 'mary'
+            }
+        if (img === 'exbluemary') {
+          img = 'exmary'
+            }
         // console.log(charNo);
         const embeds = [];
         const embed = new MessageEmbed()
