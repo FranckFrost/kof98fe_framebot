@@ -52,12 +52,82 @@ client.on('interactionCreate', async autocomplete => {
       })
     }
     // 
-    const character = autocomplete.options.getString('character')
+    let character = autocomplete.options.getString('character')
     // console.log(character)
     // If move is focused 
     if (currentName === "move" && character !== "") {
       // currentValue = autocomplete.options.getFocused()
       let moveObj = {}
+      if (json[character] === undefined) {
+        let char = character.charAt(0).toUpperCase() + character.slice(1);
+        // Temp: validate extra names.
+        if (char === 'Mary') {
+          char = 'Blue Mary'
+            }
+        if (char === 'O.Chris') {
+          char = 'Orochi Chris'
+            }
+        if (char === 'O.Shermie') {
+          char = 'Orochi Shermie'
+            }
+        if (char === 'O.Yashiro') {
+          char = 'Orochi Yashiro'
+            }
+        if (char === 'Ex kyo' ||
+            char === 'Ex Kyo') {
+          char = 'EX Kyo'
+            }
+        if (char === 'Ex geese' ||
+            char === 'Ex Geese') {
+          char = 'EX Geese'
+            }
+        if (char === 'Ex terry' ||
+            char === 'Ex Terry') {
+          char = 'EX Terry'
+            }
+        if (char === 'Ex andy' ||
+            char === 'Ex Andy') {
+          char = 'EX Andy'
+            }
+        if (char === 'Ex joe' ||
+            char === 'Ex Joe') {
+          char = 'EX Joe'
+            }
+        if (char === 'Ex ryo' ||
+            char === 'Ex Ryo') {
+          char = 'EX Ryo'
+            }
+        if (char === 'Ex robert' ||
+            char === 'Ex Robert') {
+          char = 'EX Robert'
+            }
+        if (char === 'Ex yuri' ||
+            char === 'Ex Yuri') {
+          char = 'EX Yuri'
+            }
+        if (char === 'Ex king' ||
+            char === 'Ex King') {
+          char = 'EX King'
+            }
+        if (char === 'Ex mai' ||
+            char === 'Ex Mai') {
+          char = 'EX Mai'
+            }
+        if (char === 'Ex yamazaki' ||
+            char === 'Ex Yamazaki') {
+          char = 'EX Yamazaki'
+            }
+        if (char === 'Ex blue mary' ||
+            char === 'Ex Blue mary' ||
+            char === 'Ex mary') {
+          char = 'EX Blue Mary'
+            }
+        if (char === 'Ex billy' ||
+            char === 'Ex Billy') {
+          char = 'EX Billy'
+            }
+        character = char
+      }
       if (json[character] === undefined) {
         moveObj["name"] = 'Moves not found for specified character, try another character';
         moveObj["value"] = 'Moves not found for specified character, try another character';
