@@ -149,7 +149,7 @@ module.exports = {
         // lowerCaseChar = lowerCaseChar.split(/\s+/).join('');
         // Get character link and img for header and thumbnail.
         const link = this.getCharacterLink(character);
-        let img = character.toLowerCase().replaceAll(' ','').replace('.','').replace("blue",'');
+        const img = character.toLowerCase().replaceAll(' ','').replace('.','').replace("blue",'');
         // console.log(charNo);
         const embeds = [];
         const embed = new MessageEmbed()
