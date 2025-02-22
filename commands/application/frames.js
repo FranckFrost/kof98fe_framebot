@@ -119,9 +119,9 @@ module.exports = {
           parsedMove = parsedMove.replace(' ', '')
           console.log("Is this still useful? " + parsedMove)
         } */
-        console.log(character)
-        let escapedMoves = move
-        /* console.log(parsedMove)
+        console.log(character, move)
+        /*let escapedMoves = move
+        console.log(parsedMove)
         let escapedMoves = ''
         const moveArray = parsedMove.split(" ")
         moveArray.forEach((element) => {
@@ -133,10 +133,10 @@ module.exports = {
         }) ;
         escapedMoves = escapedMoves.trimEnd();*/
         // If move not found, exit.
-        if (data[character].hasOwnProperty(escapedMoves) === false) {
+        if (data[character].hasOwnProperty(move) === false) {
           return interaction.reply('Could not find specified move: ' + move + 'for ' + character + '. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY) for available data.');
         }
-        let moveData = data[character][escapedMoves];
+        let moveData = data[character][move];
         const startup = (moveData['Startup'] !== null) ? moveData['Startup'].toString() : '-';
         const active = (moveData['Active'] !== null) ? moveData['Active'].toString() : '-';
         const recovery = (moveData['Recovery'] !== null) ? moveData['Recovery'].toString() : '-';
@@ -156,7 +156,7 @@ module.exports = {
           .setColor('#0x1a2c78')
           .setTitle(character)
           .setURL('https://dreamcancel.com/wiki/The_King_of_Fighters_%2798_UMFE/' + link)
-          .setAuthor({ name: escapedMoves, iconURL: 'https://pbs.twimg.com/profile_images/1150082025673625600/m1VyNZtc_400x400.png', url: 'https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY' })
+          .setAuthor({ name: move, iconURL: 'https://pbs.twimg.com/profile_images/1150082025673625600/m1VyNZtc_400x400.png', url: 'https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY' })
           // .setDescription('Move input')
           .setThumbnail('https://tiermaker.com/images/chart/chart/king-of-fighters-98-ultimate-match-tier-list-maker-1280912/' + img + 'selectpng.png')
           .addFields(
