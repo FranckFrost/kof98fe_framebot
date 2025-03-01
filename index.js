@@ -3,6 +3,7 @@ const fs = require('fs');
 const { Client, Collection, Intents } = require('discord.js');
 const keepAlive = require('./server');
 const path = require('path')
+const fetch = require('node-fetch');
 
 // Create a new client instance
 const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
@@ -33,10 +34,21 @@ client.once('ready', () => {
 client.on('interactionCreate', async autocomplete => {
 	if (!autocomplete.isAutocomplete()) return;
   // console.log(autocomplete.commandName)
-	if (autocomplete.commandName === 'embed' || autocomplete.commandName === 'frames') {
+	if (autocomplete.commandName === 'embed' || autocomplete.commandName === 'frames' || autocomplete.commandName === 'cargo') {
     let currentOption = autocomplete.options.getFocused(true);
     let currentName = currentOption.name;
     let currentValue = currentOption.value;
+
+    if (autocomplete.commandName === 'cargo'){
+	    let cargo_characters = []
+	    const url_char = "https://dreamcancel.com/w/index.php?title=Special:CargoExport&tables=MoveData_KOF98FE%2C&&fields=MoveData_KOF98FE.chara%2C&&group+by=MoveData_KOF98FE.chara&order+by=&limit=100&format=json"
+	    const response_char = await fetch(url_char);
+	    const cargo_char = await response_char.json();
+	    for (let x in cargo_char) {
+		    cargo_characters.push(cargo_char[x]["chara"])
+	    }
+	    characters = cargo_characters;
+    }
 
     const options = [];
     if (currentName === "character") {
@@ -53,7 +65,6 @@ client.on('interactionCreate', async autocomplete => {
     }
     // 
     let character = autocomplete.options.getString('character')
-    // console.log(character)
     // If move is focused 
     if (currentName === "move" && character !== "") {
       // currentValue = autocomplete.options.getFocused()
@@ -183,6 +194,12 @@ client.on("ready", () => {
     }],
   }); 
 });
+client.on("error", (e) => console.error(e));
+client.on("warn", (e) => console.warn(e));
+client.on("debug", (e) => console.info(e));
+client.on('rateLimit', (info) => {
+  console.log(`Rate limit hit ${info.timeDifference ? info.timeDifference : info.timeout ? info.timeout: 'Unknown timeout '}`)
+})
 // Keep bot alive. (doesn't seem to work on raspberry, port issue to look into later)
 // keepAlive();
 // Login to Discord with your client's token
