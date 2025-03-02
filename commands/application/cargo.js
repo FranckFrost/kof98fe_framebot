@@ -18,7 +18,7 @@ module.exports = {
   			.setDescription('The move name or input.')
   			.setRequired(true)),
   async execute(interaction) {
-    const character = interaction.options.getString('character');
+    const character = this.getCharacter(interaction.options.getString('character'));
     const [id, move] = interaction.options.getString('move').split("??");
     console.log("cargo", character, move)
 
@@ -139,6 +139,70 @@ module.exports = {
         console.log("Error finishing cargo request", err);
         return interaction.reply('There was an error while processing your request, if the problem persists, contact the bot developers. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY) to look for the data.');
       }
+  },
+  getCharacter: function(character) {
+    const chart = {
+      'Andy': 'Andy Bogard',
+      'Athena': 'Athena Asamiya',
+      'Benimaru': 'Benimaru Nikaido',
+      'Billy': 'Billy Kane',
+      'Mary': 'Blue Mary',
+      'Ex Ryo': 'EX Ryo',
+      'Ex Robert': 'EX Robert',
+      'Ex Yuri': 'EX Yuri',
+      'Ex Terry': 'EX Terry',
+      'Ex Andy': 'EX Andy',
+      'Ex Joe': 'EX Joe',
+      'Ex Kyo': 'EX Kyo',
+      'Ex Geese': 'EX Geese',
+      'Ex King': 'EX King',
+      'Ex Mai': 'EX Mai',
+      'Ex Yamazaki': 'EX Yamazaki',
+      'Ex Billy': 'EX Billy',
+      'Ex Blue Mary': 'EX Blue Mary',
+      'O.Chris': 'Orochi Chris',
+      'O.Shermie': 'Orochi Shermie',
+      'O.Yashiro': 'Orochi Yashiro',
+      'Chang': 'Chang Koehan',
+      'Chin': 'Chin Gentsai',
+      'Choi': 'Choi Bounge',
+      'Clark': 'Clark Still',
+      'Eiji': 'Eiji Kisaragi',
+      'Daimon': 'Goro Daimon',
+      'Krauser': 'Wolfgang Krauser',
+      'Iori': 'Iori Yagami',
+      'Brian': 'Brian Battler',
+      'Joe': 'Joe Higashi',
+      'HeavyD': 'Heavy D!',
+      'Heavy D': 'Heavy D!',
+      'Mr.Big': 'Mr. Big',
+      'Mr Big': 'Mr. Big',
+      'MrBig': 'Mr. Big',
+      'Rugal': 'Rugal Bernstein',
+      'Kasumi': 'Kasumi Todoh',
+      'Kim': 'Kim Kaphwan',
+      'Saisyu': 'Saisyu Kusanagi',
+      'Kyo': 'Kyo Kusanagi',
+      'Leona': 'Leona Heidern',
+      'Chizuru': 'Chizuru Kagura',
+      'Mai': 'Mai Shiranui',
+      'Geese': 'Geese Howard',
+      'Lucky': 'Lucky Glauber',
+      'Ralf': 'Ralf Jones',
+      'Robert': 'Robert Garcia',
+      'Ryo': 'Ryo Sakazaki',
+      'Yamazaki': 'Ryuji Yamazaki',
+      'Shingo': 'Shingo Yabuki',
+      'Kensou': 'Sie Kensou',
+      'Takuma': 'Takuma Sakazaki',
+      'Terry': 'Terry Bogard',
+      'Yashiro': 'Yashiro Nanakase',
+      'Yuri': 'Yuri Sakazaki'
+    };
+    if (chart[character] === undefined) {
+      return character;
+    }
+    return chart[character];
   },
   getHyperLink: function(str,inv) {
     if (inv && str === null) return 'No recorded invincibility.'; // no invuln found
