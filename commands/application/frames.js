@@ -46,6 +46,7 @@ module.exports = {
         const ob = (moveData['Frame Advantage on Block'] !== null) ? moveData['Frame Advantage on Block'].toString() : '-';
         const notes = (moveData['Properties'] !== null) ? moveData['Properties'].toString() : 'No notes found.';
         //const dmg = (moveData['Damage'] !== null) ? moveData['Damage'].toString() : '-';
+        
         // Get character link and img for header and thumbnail.
         const link = 'https://dreamcancel.com/wiki/The_King_of_Fighters_%2798_UMFE/' + encodeURIComponent(character);
         const img = this.getCharacterImg(character);
