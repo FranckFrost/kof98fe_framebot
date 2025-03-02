@@ -202,6 +202,7 @@ function getCharacter(character) {
       'Iori': 'Iori Yagami',
       'Brian': 'Brian Battler',
       'Joe': 'Joe Higashi',
+      'HeavyD': 'Heavy D!',
       'Heavy D': 'Heavy D!',
       'Mr.Big': 'Mr. Big',
       'Mr Big': 'Mr. Big',
