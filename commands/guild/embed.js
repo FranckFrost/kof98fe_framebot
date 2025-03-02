@@ -21,7 +21,7 @@ module.exports = {
     const character = interaction.options.getString('character');
     const move = interaction.options.getString('move');
     // Load frame data json.
-    fs.readFile("./assets/framedata98.json", "utf8", (err, jsonObject) => {
+    fs.readFile("./assets/framedata98fe.json", "utf8", (err, jsonObject) => {
       if (err) {
         // If unable to read json, exit.
         return interaction.reply('Could not load frame data file. Refer to the [Google sheet](https://docs.google.com/spreadsheets/d/100XfeqQCZB7uaeg9DJ3yWIIu6lHLbhdhs7B8b8eWRpY) for the data.');
