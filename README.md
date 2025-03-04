@@ -4,7 +4,7 @@ This is a KOF 98FE bot in a very early stage of development made by [@Franck_Fro
 ## Getting started
 To start using this bot in your server, add it with the following [link](https://discord.com/api/oauth2/authorize?client_id=966809752904564747&permissions=277025721344&scope=bot%20applications.commands). You can also view the bot in community bot listing platforms:
  - [Top](https://top.gg/bot/966809752904564747)
- - [Discord Bot](https://discord.bots.gg/bots/966809752904564747)
+ - [Discord Bots](https://discord.bots.gg/bots/966809752904564747)
 
 ## Usage
 The bot has a `/frames` and a `/cargo` slash command that both accept 2 arguments:
