@@ -23,10 +23,6 @@ module.exports = {
     try {
       const character = this.getCharacter(interaction.options.getString('character'));
       const id = interaction.options.getString('move');
-      /*if (mov.split("?")[1] === undefined) {
-        return interaction.editReply('You are free to manually enter the **character** but you have to select the **move** from the scroll list. You can type to refine the search.')
-      }
-      const [id, move] = mov.split("?");*/
       
       // Fetch the cargo data with the appropriate moveId
       const url_cargo = "https://dreamcancel.com/w/index.php?title=Special:CargoExport&tables=MoveData_KOF98FE%2C&&fields=MoveData_KOF98FE.input%2C+MoveData_KOF98FE.input2%2C+MoveData_KOF98FE.name%2C+MoveData_KOF98FE.rank%2C+MoveData_KOF98FE.idle%2C+MoveData_KOF98FE.images%2C+MoveData_KOF98FE.hitboxes%2C+MoveData_KOF98FE.damage%2C+MoveData_KOF98FE.counter%2C+MoveData_KOF98FE.stun%2C+MoveData_KOF98FE.guard%2C+MoveData_KOF98FE.cancel%2C+MoveData_KOF98FE.startup%2C+MoveData_KOF98FE.active%2C+MoveData_KOF98FE.recovery%2C+MoveData_KOF98FE.hitadv%2C+MoveData_KOF98FE.blockadv%2C+MoveData_KOF98FE.invul%2C&where=moveId%3D%22"+encodeURIComponent(id)+"%22&order+by=&limit=100&format=json";
