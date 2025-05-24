@@ -25,7 +25,7 @@ module.exports = {
       const id = interaction.options.getString('move');
       
       // Fetch the cargo data with the appropriate moveId
-      const url_cargo = "https://dreamcancel.com/w/index.php?title=Special:CargoExport&tables=MoveData_KOF98FE%2C&&fields=MoveData_KOF98FE.input%2C+MoveData_KOF98FE.input2%2C+MoveData_KOF98FE.name%2C+MoveData_KOF98FE.rank%2C+MoveData_KOF98FE.idle%2C+MoveData_KOF98FE.images%2C+MoveData_KOF98FE.hitboxes%2C+MoveData_KOF98FE.damage%2C+MoveData_KOF98FE.counter%2C+MoveData_KOF98FE.stun%2C+MoveData_KOF98FE.guard%2C+MoveData_KOF98FE.cancel%2C+MoveData_KOF98FE.startup%2C+MoveData_KOF98FE.active%2C+MoveData_KOF98FE.recovery%2C+MoveData_KOF98FE.hitadv%2C+MoveData_KOF98FE.blockadv%2C+MoveData_KOF98FE.invul%2C&where=moveId%3D%22"+encodeURIComponent(id)+"%22&order+by=&limit=100&format=json";
+      const url_cargo = "https://dreamcancel.com/w/index.php?title=Special:CargoExport&tables=MoveData_KOF98FE%2C&&fields=MoveData_KOF98FE.input%2C+MoveData_KOF98FE.input2%2C+MoveData_KOF98FE.name%2C+MoveData_KOF98FE.version%2C+MoveData_KOF98FE.rank%2C+MoveData_KOF98FE.idle%2C+MoveData_KOF98FE.images%2C+MoveData_KOF98FE.hitboxes%2C+MoveData_KOF98FE.damage%2C+MoveData_KOF98FE.counter%2C+MoveData_KOF98FE.stun%2C+MoveData_KOF98FE.guard%2C+MoveData_KOF98FE.cancel%2C+MoveData_KOF98FE.startup%2C+MoveData_KOF98FE.active%2C+MoveData_KOF98FE.recovery%2C+MoveData_KOF98FE.hitadv%2C+MoveData_KOF98FE.blockadv%2C+MoveData_KOF98FE.invul%2C&where=moveId%3D%22"+encodeURIComponent(id)+"%22&order+by=&limit=100&format=json";
       const response_cargo = await fetch(url_cargo);
       const cargo = await response_cargo.json();
   
@@ -38,7 +38,8 @@ module.exports = {
       if (moveData["input"] !== null) {
 	      move = moveData["name"] + " (" + moveData["input"] + ")"
 	      if (moveData["input2"] !== null && moveData["input"] !== moveData["input2"]) {
-		      move = moveData["name"] + " ([" + moveData["input"] + "] / [" + moveData["input2"] + "])"
+		      let ver = (moveData["version"] === 'Raw' || moveData["version"] === "Canceled into") ? moveData["version"]+" " : "";
+		      move = moveData["name"] + " (" + ver + "[" + moveData["input"] + "] / [" + moveData["input2"] + "])"
 	      }
       }
       move = he.decode(move)
