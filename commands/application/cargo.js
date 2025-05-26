@@ -71,7 +71,7 @@ module.exports = {
         .setColor('#0x1a2c78')
         .setTitle(character)
         .setURL(link)
-        .setAuthor({ name: move, iconURL: 'https://pbs.twimg.com/profile_images/1150082025673625600/m1VyNZtc_400x400.png', url: link + '/Data' })
+        .setAuthor({ name: move, iconURL: 'https://cdn.discordapp.com/icons/95696291010449408/fde1912170361c5ad27c33ef708f1c71.webp?size=100&quality=lossless', url: link + '/Data' })
         // .setDescription('Move input')
         .setThumbnail('https://tiermaker.com/images/chart/chart/king-of-fighters-98-ultimate-match-tier-list-maker-1280912/' + img + 'selectpng.png')
         .addFields(
